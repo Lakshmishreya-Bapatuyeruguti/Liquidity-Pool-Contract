@@ -1,0 +1,131 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountOfToken1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountOfToken2",
+						"type": "uint256"
+					}
+				],
+				"name": "addToPool",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract IERC20",
+						"name": "_token1",
+						"type": "address"
+					},
+					{
+						"internalType": "contract IERC20",
+						"name": "_token2",
+						"type": "address"
+					}
+				],
+				"name": "initializeTokens",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountIn",
+						"type": "uint256"
+					},
+					{
+						"internalType": "contract IERC20",
+						"name": "fromToken",
+						"type": "address"
+					},
+					{
+						"internalType": "contract IERC20",
+						"name": "toToken",
+						"type": "address"
+					}
+				],
+				"name": "swapTokens",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountOfToken1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountOfToken2",
+						"type": "uint256"
+					}
+				],
+				"name": "withdrawFromPool",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/LiquidityPool.sol": "LiquidityPool"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34",
+				"dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr"
+			]
+		},
+		"contracts/LiquidityPool.sol": {
+			"keccak256": "0xde1c45d446ae69882fd3eb0db59321222cfa032536d91abf32d782ea88014456",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://33ac96333e31ee320038e2fdae17bf71c65967722439099183287be4c8250d97",
+				"dweb:/ipfs/QmUcmBgsKc6M2VVYxoFXkAJEEMTRGBoc3peRw4wnoY5tBt"
+			]
+		}
+	},
+	"version": 1
+}
